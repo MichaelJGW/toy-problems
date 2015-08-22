@@ -1,26 +1,3 @@
-/*
-	reverse order of strings and arrays
-
-	example 1
-
-	input -> 'text'
-	output -> 'txet'
-
-	example 2
-
-	input -> [1,2,3]
-	output -> [3,2,1]
-
-	example 3
-
-	input -> ['happy', 'hacking']
-	output -> ['gnikcah', 'yppah']
-*/ 
-
-var text = 'happy hacking';
-var array = [1,2,3];
-var textInArray = ['happy', 'hacking'];
-
 var reverse = function(input){
 	if(input.length === 1){
 		return input;

@@ -68,7 +68,6 @@ var nQueens  = function(size){
 				}
 				grid.pop();
 			}
-
 		}
 		return grid;
 	}
@@ -77,4 +76,15 @@ var nQueens  = function(size){
 	return counter;
 }
 
-console.log(nQueens(8));
+
+/*
+answers found online
+n:	            1	2	3	4	5	6	7	8	9	10	11	12	13	14	..	24	25	26
+all:	        1	0	0	2	10	4	40	92	352	724	2,680	14,200	73,712	365,596	..	227,514,171,973,736	2,207,893,435,808,352	22,317,699,616,364,044
+
+*/
+for (var i = 0; i <= 13; i++) {
+	var startTime = Date.now();
+	console.log("Q" + i + " =" , nQueens(i) , " : Time = ", (Date.now() - startTime)/1000 + "s");
+};
+
